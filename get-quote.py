@@ -11,7 +11,7 @@ def primary():
   # last = len(quotes) - 1   # change the last variable to update automatically if quotes are added or removed from text file
   rnd = random.randint(0, last)   # random number is stored in rnd
   
-  print(quotes[rnd+1])
+  print(quotes[rnd+1].strip('\n'))   # .strip('\n') removes newline at beg/end of string
   print(quotes[rnd])   # prints random quote
   # print(quotes[-1]) # prints last array value
 
